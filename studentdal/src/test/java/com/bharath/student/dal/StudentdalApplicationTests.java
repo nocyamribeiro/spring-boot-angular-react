@@ -30,13 +30,13 @@ public class StudentdalApplicationTests {
 	
 	@Test
 	public void testFindStudentById() {
-		Student student = studentRepository.findOne(1l);
+		Student student = studentRepository.findById(1l).get();
 		System.out.println(student);
 	}
 	
 	@Test
 	public void testUpdateStudent() {
-		Student student = studentRepository.findOne(1l);
+		Student student = studentRepository.findById(1l).get();
 		student.setFee(40d);
 		
 		studentRepository.save(student);
