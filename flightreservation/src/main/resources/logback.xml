@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-	<property name="LOG_DIR" value="/Users/bharaththippireddy/Documents/logs" />
+	<property name="LOG_DIR" value="/home/maycon/Cursos/SpringBootAngular/logs" />
 	<property name="FILE_PREFIX" value="flightreservation" />
 
 	<appender name="FILE"
@@ -20,7 +20,7 @@
 		</rollingPolicy>
 	</appender>
 
-	<root leve="info">
+	<root level="info">
 		<appender-ref ref="FILE" />
 	</root>
 

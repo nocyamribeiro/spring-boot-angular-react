@@ -1,0 +1,22 @@
+
+In this lecture you will learn the advantages of dividing the Java application into multiple logical
+layers namely data access layer services layer, presentation layer and integration layer.
+The number one advantage is simplicity.
+Since we are going to spread our code across these layers and classes will not be putting everything
+in one single class so our application and the classes themselves will be very simple and easy to understand.
+The second advantage is separation of concerns.
+There will be a clear separation of concerns.
+That is the presentation layer classes will do the presentation the services layer classes will have
+the business logic and the data access layer classes will deal with the data access that is connecting
+to a data source and retrieving the data updating it etc. and the integration layer is responsible for
+either integrating with other applications or letting other applications integrate with our application 
+So there is a clear separation of concerns which will give another big advantage which is easy maintenance.
+Once the application goes to production if we have any issue with our application we can just jump into
+a particular layer by looking at what the issue is.
+That is if the database is causing some problem we can address it by just looking at the data access
+layer.
+If the business logic is not happening as expected we can take a look at the services layer if the
+user is not seeing what he is supposed to see.
+Then we look at the presentation layer code that way the maintenance of the location is very simple.
+So the three important advantages of dividing a application into layers or following a layered architecture
+is simplicity separation of concerns and easy maintenance.

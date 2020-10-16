@@ -1,0 +1,44 @@
+WEBVTT
+
+In this lecture you will learn what micro services are to understand what Microservices are.
+You first need to understand what monolithic applications are and their characteristics.
+You already know what they are because we have been developing monolithic applications for quite
+some years now.
+For example if we are developing a hospital management software which has a patient registration module which captures
+the patient details the patient clinical module which will capture all his clinical information from
+X-rays to blood test then a bed management if he's an inpatient.
+This particular module will handle his beds.
+And finally the management want to make sure that the insurance claims are in place and the hospital
+gets the money.
+So if you are following a monolithic approach we'll put all these modules and their code into one single
+application and over time as this application grows it will be a huge code base and if we have to even
+fix a very simple defect in the application it will be very difficult because we'll have to make sure
+where that defect is across these modules and huge code base.
+And every time we fix a defect we'll how to deploy the entire application and adding new features is also
+difficult as we have to make sure that none of the other modules are impacted when we are making a change
+to one of these modules
+That brings us to micro services which are small and focused services which gather together those pieces
+that change for the same reason.
+For example we can split our monolithic hospital management software into a clinical service registration
+service claim Management Service and bad management service four different micro service applications
+and the code boundaries for each of these is defined by the business boundaries or the business problem
+and they are solving in that way we can avoid them to grow too large micro services are autonomous.
+They are smaller and focused as well as they are autonomous will be packaging micro services onto their
+own machines or server so we can package each of these services and deploy them onto their own machines.
+With a evolution of cloud and all the virtual machines.
+The machine has to be used carefully and once they are deployed on their own all the communication across
+these services happens through network calls.
+So here the clinical.
+So we can use the patient details from the registration service the bed management needs the patient
+information it will contact the patient registration module which will fetch the information for it 
+Similarly the claim management in order to place a claim it needs all the patients clinical information.
+So all this communication will happen through network calls and each of these services will expose out
+an API application programming interface so that the other services can use that API to consume the services
+provided by them.
+And the Golden Rule to evaluate that application you are building is a micro service is can you change
+and deploy your application without changing or impacting other services that it uses the other services
+that use your service.
+To summarize a micro service is a smaller and focused service that is also autonomous.
+That is it can be built and deployed on its own without impacting other services.
+And each of these micro services Expose out an API and the communication across these happens through
+that API using network calls.

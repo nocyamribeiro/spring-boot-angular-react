@@ -1,0 +1,21 @@
+
+In this short lecture you will learn how the layers are related and the technology is used to implement
+each of them starting with the Data Access Layer we use war M which internally uses JDBC we don't
+directly use JDBC in our applications.
+ORM stands for object relational mapping and ORM provide us like Hibernate will be used throughout 
+this course spring data makes it very easy to come up with a data access layer We'll see how easy it is
+and you will use it to connect and perform crud operations against the database once we have
+the data access layer.
+the serrvices layer is typically implemented using plain Java interfaces and classes will be putting all 
+our logic into those methods.
+We don't need any framework that the presentation layer typically uses the MVC pattern the model view
+controller pattern and since we'll be using spring we can use spring MVC to implement our presentation
+layer that can then be accessed by our browser applications or mobile applications our client applications.
+Last but not least the integration layer is web services and nowadays it's all restful.
+web services more than soap and these can be used to access our application 
+We will expose our application as a web services provider and also if we want to access other web services
+from within our application we can do that as well.
+by writing web services clients or consumers.
+So DAL layer we are going to use ORM and tools like spring data J.P.A. along with Hibernate presentation
+layer we'll be using spring MVC and for integration layer we will be implementing the restful Web services using spring
+data rest or spring MVC.

@@ -1,0 +1,49 @@
+WEBVTT
+
+In the introduction of this lecture you have learned what micro services are and a couple of important characteristics
+of a microscope is in this lecture you will learn a few more characteristics or advantages of using Microsoft.
+Starting with Heterogenous meaning each of our micro service can be written in a different programming language
+and they can run on a different platform or operating system and they can all communicate using the
+API as they expose which usually are rest going back to our hospital management application example the
+clinical model could be developed in Java the Python or the registration module the patient registration
+module would be developed in Python claim management in nodeJS and bed management in dot net.
+So we can choose a technology that suits that particular requirement in a better fashion in monolithic
+application.
+We cannot do that.
+Usually we end up coding the whole thing in one single technology and it's even harder to migrate
+to a different technology or platform which is out in the market and which is better to use because
+will have migrate the entire application our code base but incase of micro services we can easily migrate
+a particular module
+If there is a technology out there which suits it better the second important characteristics is a robustness
+if one of the component of the system fails then that will not bring down the entire application which
+is the case in case of monolithic applications in case of Microservices, we can gracefully degrade
+that particular Service for example the clinical module goes down the entire hospital management application
+will not be down
+The patient registration will still continue claim management will work and also the bed management.
+So micro services are or should be robust
+scalability as our applications user base grows and a lot of users start accessing our application
+our application should be able to scale in case of a monolithic application will have to deploy the  entire application
+to multiple servers.
+Although the Load is actually on a few modules in our application for example if a lot of patient registration
+is happening or if a lot of clinical data is coming in instead of just increasing the number of deployments
+for these two models will have to deploy the whole application.
+But in case of micro services we can simply deploy those models or those micro services to multiple
+servers depending on the number of users using that particular Module or Microservice. Next important
+characteristic is easy to deploy.
+With a monolithic application even to do a small bug fix.
+Will have to deploy the entire application, but with a  micro service.
+We can simply deploy a particular service when we do a bug fix in that particular service or even
+a new feature could be easily added to an existing micro service and only that service will be deployed
+to production.
+This is a big deal because we can quickly push our features to production and to the customer without
+a large impact.
+Last but not the least re-usability and replace ability as each of the micro services use one another.
+It should be easy to replace them for example in this case the patient registration model is being used
+by clinical application or micro service as well as the bed management as well as claim management to
+get the patient information so that is re-usability replace ability meaning if we have a better service
+or if we are getting a same service from a different 
+For example the bed management if we have decided that we are going to buy out a different bed management
+module which is lot better from a third party vendor we should be able to easily replace this bad management
+module with the version of software which we are getting from a third party vendor.
+So all these are important characteristics of micro services starting from heterogenous robustness scalable
+easy to deploy and they should be reusable and replaceable.

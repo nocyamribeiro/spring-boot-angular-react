@@ -54,7 +54,7 @@ public class DocumentController {
 		Document document = repository.findOne(id);
 		byte[] data = document.getData();
 
-		response.setHeader("Content-Disposition", "attachment;filename=downloaded.jpeg");
+		response.setHeader("Content-Disposition", "attachment;filename="+document.getName());
 
 		return outputStream -> {
 			outputStream.write(data);

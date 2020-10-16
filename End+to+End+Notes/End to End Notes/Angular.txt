@@ -1,0 +1,16 @@
+
+In the next few lectures you're going to create a checkin application this time using Angular
+J.S. earlier you have developed a flight checkin application which has consumed the web services provided
+by flight reservation and it became a micro service of its own.
+This time you're going to do the very same flight checkin  using a Angular client.
+It will be a single page app like this and you click on the Start button it will ask the end user to
+enter a reservation ID he enters the reservation ID clicks on next and he navigates to the next page
+where the flight details and the passenger details are displayed.
+He enters the number of bags he wants to checkin clicks on checkin and the checkin is successful
+Everything happens in one single page.
+That is a lot happening behind the scenes when he enters the reservation ID it's making a call to the java backend.
+And all these details are coming from the database through the Java backend through a restful call.
+And once he enters the bag details clicks on the checkin button.
+There is one more backend call that is happening and the checkin completes successfully.
+So you have already done all this using Java spring boot etc in this flight checkin application.
+But this time you are going to create a angular app and a UI using angular JS.

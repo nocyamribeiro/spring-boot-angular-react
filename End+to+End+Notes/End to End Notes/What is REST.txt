@@ -1,0 +1,74 @@
+WEBVTT
+
+As you watch this video lecture you through your web browser are acting as a RESTful client.
+And this website is acting as a RESTful provider by streaming the video back to you
+All that on the HTTP protocol.
+REST stands for Representational State Transfer is a bunch of principles or architectural guidelines
+and HTTP allows us to easily implement REST. In this lecture you will learn the key principles that
+make up REST and also how HTTP implements REST. No matter which web application you take,
+it will allow the end users to perform the following four operations or any other application to perform
+these four operations,
+create, read, update and delete on its resources. From Facebook to Twitter, Gmail to Youtube you will be
+able to perform all these four operations.
+That brings us to the very first RESTful principle which is uniform interface and easy access. HTTP
+provides a uniform interface to perform the CRUD operations using its HTTP methods starting from
+POST to create a resource, GET to retrieve a resource or read a resource, PUT to update a resource
+and DELETE to delete a 
+resource.
+So once we learn these four methods, we can pretty much work with any application, any RESTful application
+and create a READ, UPDATE and DELETE the resources in it.
+These are also known as verbs,
+HTTP verbs.
+Easy access, HTTP provides an easy access, easy and unique way to identify resources through its
+URIs and URLs.
+For example if we are working on a Employee Management software we can identify the employee resource 
+using /employees. To uniquely identify departments we'll use /departments.
+Now let's see how we can use the combination of the HTTP verbs and nouns. These URIs or
+URLs are known as nouns because they uniquely identify a resource.
+Let's see how the combination of verbs and nouns can be used to perform CRUD operations. To create
+an employee we'll use the POST method with /employees and we will send in the employee data.
+Here the employee name is Bharath and his department is IT.
+The method is POST and the URI is /employees. The REST provider will receive the request,
+create that in the database and send a 201 Created HTTP status code along with the entity
+that created, got created in the database. This resource here,
+this URI is called a collection resource because it is
+/employees.
+It represents all the employees, a collection of employees.
+We are adding a new employee to that collection.
+If we have a id at the end of a particular employee, then that will become an item resource. For
+example to get the employee back,
+we'll use a GET method with the employees slash the unique Id of that particular employee.
+So this is known as a item resource.
+Here is how the GET method will look like. GET employees/1 that will get us the employee that was just created in the database with a 200 OK
+HTTP response.
+We can also perform a GET on the collection resource without this Id and that will get us all the employees
+in the database back. Next is Update.
+We use a PUT method on the collection resource, on the item resource with the unique Id to perform a HTTP PUT
+which will update the employee information. Here,
+my department is getting updated from IT do psychology, a field of
+my interest. And the response will be a 200 Ok 
+along with the updated information. Update does a complete update. That is, we need to pass in the entire
+resource in the request.
+We can't do a partial, we cant't send in partial fields. If we try to just send in the department in this
+case, the name will be set to null.
+That is where we use Patch. The HTTP Patch method supports partial updates on the item resource, we
+can pass in partial information. In this case I am not passing in the name, just the department and I
+will get a response back with the complete updated entity or the patched entity back with a 200 status
+code.
+Finally delete.
+We use the HTTP DELETE and that will delete the employee in the database.
+The next important principle of REST is that our applications or RESTful providers should support
+multiple formats and HTTP allows us to do it very easily.
+We can support XML, JSON, plain text or any other format and the clients can tell what format they want, using
+the HTTP MIME types like text/xml, application/json, text/plain, HAL JSON as you
+would see later on when you build the applications. The key principle, the same application or the RESTful
+provider should be able to provide the responses or
+it should be able to support multiple data formats.
+To summarize, you have learned three key principles of REST and how HTTP implements the REST in this
+lecture, starting with single HTTP interface or a unique interface.
+HTTP supports a unique interface to perform CRUD operations using POST, PUT, GET, PATCH, DELETE and other
+methods in the HTTP protocol also known as verbs. We can easily identify and access the resources
+using the HTTP URLs and URIs.
+That is the second principle of REST.
+And finally, multiple representations. REST says that we should support or whoever implements REST
+should support multiple data formats and that can be easily supported using HTTP MIME types.

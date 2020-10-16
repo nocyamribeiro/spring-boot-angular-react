@@ -1,0 +1,30 @@
+WEBVTT
+
+In this lecture, we shall see what is Transaction Management
+and what is a transaction to start with. The process of executing a bunch of related operations
+while applying do all or nothing principle is call a transaction. A transaction is an atomic unit
+of work in which all of it happens or nothing happens.
+For example, here we have a money transfer
+example or use case wherein we have two bank accounts, Obama and Trump. And we are transferring some
+money from Obama's account that is 500 dollars from Obama's account to Trump's account.
+So we want both these updates to happen or nothing to happen 
+So this whole thing is one single transaction and making sure that that transaction happens is transaction
+management.
+So we'll begin a transaction even before we start updating Obama's account and the transaction will end
+at the end of updating the Trump's account.
+We can either commit the changes to Trump's account or the whole transaction, we can commit it or if something
+goes wrong in either step one or step two we will roll back the entire transaction.
+Every transaction will have four key properties also known as ACID properties, A for Atomicity, C
+for Consistency, I for isolation, D for durability. Taking our money transfer example, automicity, you
+already understood that. Either both the updates will happen or nothing will happen, that is atomic, one single
+unit of work. Consistency meaning the database should be left in a consistent state at the end of the
+transaction.
+So here if we look at the balance, the total balance at the end of the transaction will be consistent. That
+is $500 will be deducted from Obama's account and it'll be added here.
+So here it'll be probably 500 at the end of the transaction, here it will be 1000.
+So the database should be in a consistent state at the beginning as well as at the end of the transaction.
+Isolation meaning, if there are multiple transactions happening each transaction should work in isolation
+without impacting each other.
+Durability,
+once the transaction changes are committed those changes should stay in the database,
+that is durability.

@@ -1,0 +1,13 @@
+WEBVTT
+By the end of this section you will develop a location web application and in the process you will master how to
+create the data access layer the services layer the presentation layer and of course the model class 
+will do that while working on a location module web application which will allow the end user to create
+a location in the database.
+Given a id of the location location code name of the location and you can also choose between types
+whether the location type is urban or rural.
+Once he saves the information he can view all the locations in the database where you will display all the
+locations by retrieving them he can edit each of the locations and save or update that information.
+He can also delete the locations and also add a new location.
+So you will allow the end user to perform all the crud operations on a location by using our web application
+from the web browser and in the process we are going to master how to create the services layer the presentation
+layer and model classes and data access layer.

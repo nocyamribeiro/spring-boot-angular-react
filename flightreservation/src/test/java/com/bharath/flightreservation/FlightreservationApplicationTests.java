@@ -38,14 +38,14 @@ public class FlightreservationApplicationTests {
 
 	@Test
 	public void testGenerateItenarary() {
-		Reservation reservation = reservationRepo.findOne(1L);
+		Reservation reservation = reservationRepo.findById(1L).get();
 		String filePath = "/Users/bharaththippireddy/Documents/reservations/reservation" + reservation.getId() + ".pdf";
 		pdfGenerator.generateItinerary(reservation, filePath);
 	}
 
 	@Test
 	public void testEmail() {
-		Reservation reservation = reservationRepo.findOne(1L);
+		Reservation reservation = reservationRepo.findById(1L).get();
 		String filePath = "/Users/bharaththippireddy/Documents/reservations/reservation" + reservation.getId() + ".pdf";
 		emailUtil.sendItinerary("thippireddy.bharath@gmail.com", filePath);
 	}

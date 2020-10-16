@@ -1,0 +1,40 @@
+WEBVTT
+In this lecture, you'll learn what logging is, how to do logging or implement logging for our applications
+and also the various log levels. Logging is the process of writing messages from within our application
+to a central location so that we can know what exactly is happening in our application at runtime.
+We can do it in two simple steps by simply creating a logger object and use that logger object to
+start writing messages to a central location.
+There are several open source logging libraries and the two popular ones are LOG4J and LOGBACK.
+There is also SL4J which is a wrapper around these libraries or a facade on these libraries which
+makes our job very easy to implement logging for our application. In the next few lectures, you'll be 
+using a combination of SL4J which is a wrapper around LOGBACK to implement logging for our applications.
+So logging is the process of writing messages from within our application to a central location so that
+we can track and see what exactly is happening in our application.
+And if something goes wrong at some point we can go back to the log file and see what exactly has happened
+when a particular customer is accessing our application. All these log libraries provide different log
+levels.
+So depending on the level of log you want to make or go into the log file, you can use all these log
+levels starting with error which is the highest and something goes wrong when an exception is thrown,
+that is when we use error. A warning simply says that something might go wrong or something is not happening
+as expected. Information is just information that right now the process is in a particular method,
+it's doing a particular calculation etc.
+Debug, we use debug when as a developer we are debugging into our application and trace pretty much
+everything goes into the trace.
+So you use trace to let all that that is happening in your application in the log file.
+So we can use different log levels and to use one of these log levels,
+we use the appropriate method on the logger.
+For example, if you want to send a message into the log as information, you will use LOGGER.info.
+If you want to send it as an error,
+you will use LOGGER.error
+and so on.
+And you can set the log level dynamically for your application either through a program or through configuration.
+If you set the log level to info for example, info and higher, info, warn and error message will only
+go into the log
+Even if you use debug and trace in your applications, the logger not lock them to the log file.
+So you can change that level dynamically. If you set it to trace, pretty much everything that you are
+logging in your application, LOGGER.trace, LOGGER.debug, LOGGER.info, warn and error will go into
+the log file.
+So in production, you don't want trace, debug and everything. So you want information maybe and then
+warnings ofcourse and error.
+So you can set the log levels to different levels
+in your local machine in testing environment and then in production dynamically through configuration.

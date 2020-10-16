@@ -49,7 +49,7 @@ public class ReservationServiceImpl implements ReservationService {
 
 		Long flightId = request.getFlightId();
 		LOGGER.info("Fetching  flight for flight id:" + flightId);
-		Flight flight = flightRepository.findOne(flightId);
+		Flight flight = flightRepository.findById(flightId).get();
 
 		Passenger passenger = new Passenger();
 		passenger.setFirstName(request.getPassengerFirstName());

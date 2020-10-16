@@ -1,0 +1,44 @@
+WEBVTT
+
+Before you go ahead and start working hands on on Java EE modules  and projects I will summarize
+the key.
+Six classes and interfaces that you will be using throughout this course as well as throughout your JavaEE development.
+The names of these classes will be derived from the module name you are working on.
+It will all start with the model class whose name will be derived directly from the module name for
+example if the model you are working on is employee module then the moral class name will be employee
+dot Java.
+If you are working on admin Module this will be admin dot Java.
+This model class represents the data of our domain usually it directly corresponds to a database
+table in case of an employee.
+It represents the employee table and so on.
+Once we have the model we will come up with a DAO interface or data access layer interface.
+The naming convention here is I dashed DAO
+When you learn spring data.
+You will see that all this will go away the data access layer will be simplified.
+But there are javaEE applications out there which  still follow this convention and that is the reason I
+am explaining this.
+If the model name is Employee this interface will be I employee DAO and this interface will be implemented
+by a class called employee DAO implement
+So the relationship between an interface and a class within a layer is a relationship this DAO 
+impl is a DAO it
+Implements this DAO
+This is inheritance.
+Once we have the data access layer we implement the Services layer wherein we have
+I dash employee service employees service employees a class that implements this interface.
+So the relationship within a layer is a easy relationship and the relationship across layers is a has
+a relationship.
+So the services impl class here will use the services provided by that data access layer interface
+and it has data access Layer DAO as we'll see later on we will do dependency injection of this DAO into the
+service impl and use it.
+Similarly the last important component in a spring application is the controller.
+If the module name is Employee it will be employee controller.
+The module name is admin.
+It would be admin controller and so on 
+This is a class and it will use it has a has a relationship with the services layer interface.
+So the key six components out of which two are interfaces are IDAO
+And I_service
+These two are interfaces.
+Rest all are classes the model class the controller class the services class that implements the services.
+interface and the Dao impll class that implements the dao interface.
+And as I have said spring data will make it a lot easier and we can avoid this Dao interface and impl as you
+will see shortly.

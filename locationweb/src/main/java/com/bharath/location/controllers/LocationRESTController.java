@@ -41,12 +41,12 @@ public class LocationRESTController {
 
 	@DeleteMapping("/{id}")
 	public void deleteLocation(@PathVariable("id") int id) {
-		locationRepository.delete(id);
+		locationRepository.deleteById(id);
 	}
 	
 	@GetMapping("/{id}")
 	public Location getLocation(@PathVariable("id") int id) {
-		return locationRepository.findOne(id);
+		return locationRepository.findById(id).get();
 		
 	}
 

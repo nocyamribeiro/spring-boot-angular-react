@@ -37,10 +37,11 @@ public class EmailUtil {
 			messageHelper.setSubject(EMAIL_SUBJECT);
 			messageHelper.setText(EMAIL_BODY);
 			messageHelper.addAttachment("Itinearary", new File(filePath));
-			sender.send(message);
+			//sender.send(message);
 		} catch (MessagingException e) {
 			LOGGER.error("Exception inside sendItinerary" + e);
 		}
+		 
 	}
 
 }

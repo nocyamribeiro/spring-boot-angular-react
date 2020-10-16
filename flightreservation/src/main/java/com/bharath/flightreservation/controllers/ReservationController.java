@@ -29,7 +29,7 @@ public class ReservationController {
 	@RequestMapping("/showCompleteReservation")
 	public String showCompleteReservation(@RequestParam("flightId") Long flightId, ModelMap modelMap) {
 		LOGGER.info("showCompleteReservation() invoked with the Flight Id: " + flightId);
-		Flight flight = flightRepository.findOne(flightId);
+		Flight flight = flightRepository.findById(flightId).get();
 		modelMap.addAttribute("flight", flight);
 		LOGGER.info("Flight is:" + flight);
 		return "completeReservation";

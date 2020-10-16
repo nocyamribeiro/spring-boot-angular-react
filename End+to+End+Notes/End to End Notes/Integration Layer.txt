@@ -1,0 +1,22 @@
+
+In the very first and I've learned about micro services and the different layers that make up a job
+application you have learned that the Microsoft applications communicate with each other through their
+integration layer.
+Here we have three different hospital management applications patient registration patient clinical
+and patient financials the patient registration the patient takes all his information sales it to a
+database.
+The patient Pinnacle's is responsible for holding all the patient lab test information X-rays and so
+on
+And the patient financials of course is responsible for billing that patient.
+These applications can communicate with each other as required through their integration layer and the
+integration layer allows these applications to be loosely coupled.
+That is tomorrow if you want to switch this patient financials application with another software.
+It's very easy to do that.
+As long as this integration layer stays intact.
+And also interoperability.
+Each of these applications can be developed in a different programming language and they can be running
+on different platforms all together and they can still operate by exchanging messages through these
+integration layers.
+Two of the key integration layer technologies are best tool web services and messaging.
+Restful is more popular and in this section it will learn how to create restful Web services using spring
+NBC for ERA projects.

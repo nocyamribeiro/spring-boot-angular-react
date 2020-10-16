@@ -1,0 +1,25 @@
+WEBVTT
+
+In this section you will enhance the security for our flight reservation application by implementing
+authentication and authorization. Authentication, you have already implemented it by asking the end user to register
+and login so that our application can know about the user.
+But we haven't encoded the password. We have stored the password in plain text. So using spring
+security we will encode the password
+and also the login process itself, we are going to do that using spring security.
+We'll load the user details and all that from the database and maintain the security information in a
+Spring security context.
+The second important piece for any application is authorization. Once the user logs in,
+now that we know about the user, we can allow certain functionality in our application to be accessed
+only by certain users and it cannot be accessed by certain users.
+The process of doing that is authorization. We'll do that based on user roles. Say a user can be assigned a
+set of roles and those roles will decide whether that user can access certain URIs or functionality
+in our application. That process is authorization.
+So you're going to map, create roles, map a user to a role and create a functionality which can be accessed
+only by an admin user.
+So we'll have two set of users, the regular user and the admin user. The regular user can access the flight information,
+confirm the reservation, book a flight and all that. But only admin user can access a new functionality
+that you will be introducing called addFlight.
+We need not implement the entire functionality but we'll demonstrate that this particular functionality
+can be accessed by a user who is an admin.
+So in the next few lectures, you are going to use Spring security and enhance the security for our application
+by encoding the passwords and also using the Spring security way of authenticating and authorizing.

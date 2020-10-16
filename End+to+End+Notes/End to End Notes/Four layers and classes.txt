@@ -1,0 +1,70 @@
+
+When we develop few applications they are divided into modules and each of these modules will be
+implemented as four layers in Java.
+EE applications starting with data access Layer
+Services layer, presentation layer and integration layer. No matter how many Java
+E projects will work on ,will come across all of these layers or at least some of these layers
+depending on the requirements starting with data access layer which is a independent layer because
+it does not depend on any other layer.
+It is responsible for performing the crud operations create read update and delete operations against
+a data store the services provided by the Data Access Layer are used by the services layer.
+This is where all our business logic or applicaiton logic will reside the services provided by the services
+layer are used to by the presentation layer classes and interfaces as well as the integration layer
+class and interfaces.
+The presentation layer as the name itself says is responsible for generating the user interface.
+This is what the end user will see.
+The integration layer on the other hand is responsible for allowing our application to access other
+applications in the organization or third party applications or the integration layer can also be used
+by other applications to access our application 
+So typically and integration layer is made up of Web services.
+So all these layers of data access layer, integration layer, presentation layer, services layer are made
+up of Java interfaces and classes that we create.
+So there are ten or nine plus one important interfaces and classes that fall across these layers starting
+with model class or a entity class.
+This class represents our domain model.
+This does not fall under any of these layers.
+We can consider it under the Data Access Layer.
+But this is usually considered as a separate class that will be used across these layers it represent
+the data or the model or the domain of our application.
+Once we have the model class we can create the data access layer interface.
+So will be creating the very first interface in the Data Access Layer.
+where-in will define all the curd operations save read update delete and then we will implement that interface
+so always code to interfaces implement that interface called DAOimpl
+This is a class that implements this interface.
+Once we have that data access layer we create a services layer interface and define the operations in
+there and then create a services implementation class which will implement this interface, this service impl
+in turn use the.
+Services provided by the DAO. The sixth an important piece is the controller class in the spring
+MVC World controller class is responsible for generating the UI.
+So the controller will make use of the services provided by the services layer and it will generate
+a UI
+For us.
+So these are the six important interface and classes.
+Here we have two interfaces.
+Rest all are classes.
+The seventh one are utility classes these classes as you will create in lectures later on are responsible
+for performing operations across these layers.
+We can use these utility classes of performing special operations across these layers. 8th validator classes
+as the name itself says we create these classes to validate the data.
+Usually that comes in from the user and that goes back to the user special kind of classes.
+The ninth class that we create are service providers.
+Or
+service consumers usually these are Web services the integration layer is made up off web services.
+Mostly restful services as you will see.
+So our application can be a service provider so that other applications can access our application through
+this layer or in some cases it can even access other applications by becoming a service consumer or
+it can be both, both a service provider and consumer.
+Last but not least nine plus one or the 10th class is a special view that we create for representing
+the data as Excel sheet PTF et cetera.
+So this is the reason I'm calling it nine plus one instead of ten because this is a special view class
+which we create in few cases where we want to generate excel sheets PDF's or a special view of our
+data.
+So to summarize there are four layers.
+Data Access.
+Services, presentation and integration and interfaces and classes that make up these four layers are
+10 of them mainly starting with that data access layer DAO and impl
+Services layer interface and impl the controller class the model class which was the first one to
+start with.
+Then the utlity classes, validator classes.
+Service providers and services consumers for the integration layer.
+And finally a special view which will be used in some cases.

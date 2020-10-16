@@ -1,0 +1,21 @@
+WEBVTT
+
+So for we've created the Data Access Layer, the Services layer and the Presentation layer for your application.
+In this section you are going to learn how to code the utility layer. And to do that, you will be working
+on a email application.
+So the utility layer as the name itself says, performs a particular or a specialized operation.
+For example if our application wants to send out emails when it saves the database information to the
+database or once it generates a report, the requirement could be anything but if our application wants
+to send an email that portion of code will live in a utility layer because that can be used from across
+our application. We can use that utility in our
+Services layer or our Controller layer or anywhere else. An other example is FileCopy.
+If we simply want to copy some files from one location to other, that is the common functionality that
+might be required across the application and that will live in a utility layer because all these are not
+directly related to our application itself but they are additional functionalities which are helping our
+application.
+Another example could be parsing an XML file and we can push that into a utility layer as well.
+So utility layer will usually carry, as the name itself says it will carry all that code 
+which is common across the application
+and also which perform a special operation.
+So starting the next lecture, you will be coming up with a utility layer which will send out emails when we save
+a record to the database.

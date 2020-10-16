@@ -1,0 +1,54 @@
+WEBVTT
+React is one of the most popular and quickly growing single page application development frame books.
+It was introduced by Facebook.
+But now it's pretty much used by all the big companies out there starting with Yahoo.
+PayPal connect Artemis BBC and many more.
+The reason for reacts popularity is because of the way it solves the problems we had with
+Traditional single page application development frame works starting with state management keeping track
+of the UI and managing the state can be hard and time consuming.
+It doesn't matter what the series of steps our users may have taken to change the UI what matters is
+were the UI has ended up react
+Will figure  out what needs to be updated and it will do it automatically for us.
+So we need not worry about state management anymore in traditional SBA single page applications.
+The DOM Manipulation is time consuming so it needs a lot of effort to change the dome or update the
+Dom react provides virtual DOM.
+Working with a virtual Dom is very fast and react will update the original Dom as and when needed it
+will figure out the differences between virtual Dom and the  real Dom and it will make the
+least amount of changes that are required to keep the UI in sync.
+This process is called reconciliation so react provides a virtual Dom with which we work and react
+internally will take care off manipulating the original Dom as required.
+And if we make the minimum changes that are required to keep the UI in sync with the changes react provide
+a great API to create a reusable UI we widgets react recommends that we break down our UI into smaller
+chunks are components instead of having one big UI widget will divide it into multiple components and
+react provide say easy to use API to create those components.
+And once we have them we can use the API to combine these and create complex components as well next
+comes the power of JavaScript react gives us the entire Power of java script because our views
+will be defined entirely in JavaScript.
+Yes you heard it right the html template engines like Ember js or  mustach make it
+hard to combine html and javascript logic but react makes it super easy.
+We can't directly use html like elements inside the javascript code this syntax is j s x javascript
+extensions which is very similar to html
+So we get the power of html and we can also use JavaScript in the same place.
+Let me show you an example that you  will be working later on.
+So here is a script or a react component and you can see that the javascript code Lives right here
+and all the JSX is right here as well so you can use a for loop loop through it and return the html
+or push the html elements onto the DOM as many number of times as you want.
+And if you want the if condition you will use it right here.
+And this part here  will happen conditionally.
+So you are going to combine JavaScript as well as html your JavaScript and html will live in the same
+place.
+We need not toggle between different editors anymore or different locations anymore.
+Everything is in one place and we no longer are limited by what the frameworks like ember J.S or mustach
+attached provide because we can use everything that is available in JavaScript inside react so react
+makes our life super easy to create the components by using what javascript provides.
+Last but not the least react is the view in the MBC so it completely addresses the viewport in MBC and
+the model and the controller can be anything.
+So you can use anything for your back end it could be Java Python Nord etc. but to develop a single
+page application view react has everything in bold and it makes our life super easy by giving us automatic
+state management lightning fast dumb mouth manipulation through its virtual dump API is to create reusable
+tiny little components instead of one monolithic huge UI component then we can use javascript and we
+can realize the complete power of JavaScript because it provides GSI X which is similar to hitch to
+Yemen but now the code both javascript and his dismal loose together and it's super easy to develop
+our you eyes and last but not the least 
+It gives everything routing etc as it will be exploding later on to develop a view and it can connect
+to any model or any backend controllers.

@@ -1,0 +1,18 @@
+
+In this section, you will create the data access layer for your application
+You will do that in two simple steps while working on a module called student.
+The first step is to create the domain model or the model class and this model class in case of the
+student module is the Student class.
+The second step is to create a spring data JPA repository interface called Student repository.
+To accomplish these two steps you will first create a database table called student and then you will
+come to the STS spring tool suite
+Create a spring boot project within that project will create the model class called student and
+map this student to the student table in the database and the fields on the Student class will be mapped
+to the database table columns.
+You will do that mapping using the JPA annotations.
+Once you do that the second step is to create a student repository interface which will extend the curd
+repository interface from spring data.
+Thats it its that simple once you create this interface which extends the repository.
+You can perform crud operations against the student table.
+You will do all that
+By the end of this section.

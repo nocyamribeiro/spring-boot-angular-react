@@ -45,8 +45,8 @@ public class LocationController {
 		Location locationSaved = service.saveLocation(location);
 		String msg = "Location saved with id: " + locationSaved.getId();
 		modelMap.addAttribute("msg", msg);
-		emailUtil.sendEmail("springxyzabc@gmail.com", "Location Saved",
-				"Location Saved Successfully and about to return a response");
+//		emailUtil.sendEmail("springxyzabc@gmail.com", "Location Saved",
+//				"Location Saved Successfully and about to return a response");
 		return "createLocation";
 	}
 
